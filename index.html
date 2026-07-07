@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Hub | Mon Espace Harmonie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- En-tête de l'application -->
+        <header class="app-header">
+            <h1>Focus Hub</h1>
+            <p class="subtitle">Trouve ton équilibre aujourd'hui</p>
+        </header>
+
+        <main class="app-grid">
+            
+            <!-- Section 1 : Sélecteur d'Espaces d'Activités -->
+            <section class="card activities-section">
+                <h2>Mes Espaces</h2>
+                <div class="activities-grid">
+                    <button class="activity-btn active">
+                        <span class="icon">📚</span>
+                        <span class="label">Lire / Réviser</span>
+                    </button>
+                    <button class="activity-btn">
+                        <span class="icon">✍️</span>
+                        <span class="label">Écrire / Créer</span>
+                    </button>
+                    <button class="activity-btn">
+                        <span class="icon">🙏</span>
+                        <span class="label">Prier / Méditer</span>
+                    </button>
+                    <button class="activity-btn">
+                        <span class="icon">🌿</span>
+                        <span class="label">Se Reposer</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Section 2 : Le Minuteur de Concentration -->
+            <section class="card timer-section">
+                <h2>Session En Cours</h2>
+                <div class="timer-display">25:00</div>
+                <div class="timer-controls">
+                    <button class="btn btn-primary">Démarrer</button>
+                    <button class="btn btn-secondary">Pause</button>
+                </div>
+            </section>
+
+            <!-- Section 3 : Le Planning de la Journée (Horaire Révisions, Repas, Prière) -->
+            <section class="card schedule-section">
+                <h2>Mon Planning Équilibré</h2>
+                <div class="timeline">
+                    
+                    <div class="timeline-item spiritual">
+                        <span class="time">07:00</span>
+                        <div class="timeline-content">
+                            <h3>Prière & Méditation</h3>
+                            <p>Ancrage et gratitude pour bien commencer</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item focus">
+                        <span class="time">08:30</span>
+                        <div class="timeline-content">
+                            <h3>Session de Révision I</h3>
+                            <p>Bloc de concentration maximale</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item meal">
+                        <span class="time">12:30</span>
+                        <div class="timeline-content">
+                            <h3>Pause Repas</h3>
+                            <p>Déconnexion, nutrition et vrai repos</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item focus">
+                        <span class="time">14:00</span>
+                        <div class="timeline-content">
+                            <h3>Session de Révision II</h3>
+                            <p>Travaux pratiques et lectures</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item spiritual">
+                        <span class="time">18:30</span>
+                        <div class="timeline-content">
+                            <h3>Retour à Soi</h3>
+                            <p>Méditation, prière du soir et respiration</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
