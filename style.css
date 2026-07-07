@@ -1,0 +1,209 @@
+/* --- Typographie et Bases --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(247, 245, 240); /* Fond crème très doux */
+    color: rgb(47, 62, 53); /* Texte Eucalyptus sombre pour le contraste */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    max-width: 1000px;
+    width: 1000px;
+}
+
+/* --- En-tête --- */
+.app-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.app-header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(35, 50, 41); /* Vert Eucalyptus profond */
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: rgb(110, 130, 115); /* Vert Sauge atténué */
+    font-style: italic;
+    margin: 0;
+}
+
+/* --- Structure en Grille (Layout) --- */
+.app-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Les cartes de l'interface */
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgb(235, 232, 225);
+    border: 1px solid rgb(235, 232, 225);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(35, 50, 41);
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(240, 238, 232);
+    padding-bottom: 10px;
+}
+
+/* Section Pleine Largeur pour les activités */
+.activities-section {
+    grid-column: 1 / span 2;
+}
+
+/* --- Boutons d'Activités --- */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.activity-btn {
+    background-color: rgb(250, 249, 246);
+    border: 1px solid rgb(225, 222, 212);
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.activity-btn .icon {
+    font-size: 1.5rem;
+}
+
+.activity-btn .label {
+    font-size: 0.9rem;
+    color: rgb(75, 90, 80);
+}
+
+.activity-btn:hover {
+    background-color: rgb(238, 242, 239);
+    border-color: rgb(140, 165, 148);
+}
+
+.activity-btn.active {
+    background-color: rgb(140, 165, 148); /* Fond Vert Sauge */
+    border-color: rgb(140, 165, 148);
+}
+
+.activity-btn.active .label {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+/* --- Section Minuteur --- */
+.timer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-display {
+    font-size: 4.5rem;
+    font-weight: 300;
+    color: rgb(35, 50, 41);
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s;
+}
+
+.btn-primary {
+    background-color: rgb(212, 163, 89); /* Or Miel Douce */
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: rgb(190, 143, 72);
+}
+
+.btn-secondary {
+    background-color: rgb(230, 228, 220);
+    color: rgb(75, 90, 80);
+}
+
+.btn-secondary:hover {
+    background-color: rgb(215, 212, 202);
+}
+
+/* --- Section Planning / Emploi du temps --- */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid rgb(210, 207, 198);
+    background-color: rgb(253, 252, 250);
+}
+
+.timeline-item .time {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: rgb(110, 130, 115);
+    min-width: 45px;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    color: rgb(47, 62, 53);
+}
+
+.timeline-content p {
+    margin: 2px 0 0 0;
+    font-size: 0.85rem;
+    color: rgb(130, 145, 135);
+}
+
+/* Couleurs spécifiques selon la nature du bloc */
+.timeline-item.spiritual {
+    border-left-color: rgb(212, 163, 89); /* Or Miel pour la sérénité */
+    background-color: rgb(254, 251, 245);
+}
+
+.timeline-item.focus {
+    border-left-color: rgb(140, 165, 148); /* Vert Sauge pour les révisions */
+    background-color: rgb(245, 248, 246);
+}
+
+.timeline-item.meal {
+    border-left-color: rgb(185, 170, 155); /* Neutre doux pour manger */
+}
